@@ -1,0 +1,7 @@
+{
+  "locales": ["ca", "es"],
+  "defaultLocale": "ca",
+  "pages": {
+    "*": ["home", "about", "init"]
+  }
+}
