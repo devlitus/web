@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #005f94;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+.navbar__menu__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+.navbar__menu__item a {
+  color: #fff;
+  text-decoration: none;
+  border-right: #fff 1px solid;
+  padding-right: 1rem;
+}
