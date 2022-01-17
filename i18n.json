@@ -2,6 +2,9 @@
   "locales": ["ca", "es"],
   "defaultLocale": "ca",
   "pages": {
-    "*": ["home", "about", "init"]
+    "*": ["home"],
+    "/service": ["service"],
+    "/about": ["about"],
+    "/contact": ["contact"]
   }
 }
