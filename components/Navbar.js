@@ -1,7 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import ChangeLanguage from "./ChangeLanguage";
 import style from "../styles/Navbar.module.css";
+import ChangeLanguage from "./ChangeLanguage";
 
 export default function Navbar() {
   const { t } = useTranslation("navbar");
@@ -9,9 +9,7 @@ export default function Navbar() {
 
   return (
     <div className={style.navbar}>
-      <div className={style.navbar__logo}>
-        <p>{title}</p>
-      </div>
+      <p className={style.navbar__logo}>{title}</p>
       <div className={style.navbar__menu}>
         <ul className={style.navbar__menu__items}>
           <li className={style.navbar__menu__item}>
@@ -45,7 +43,9 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-        <ChangeLanguage />
+        <div>
+          <ChangeLanguage />
+        </div>
       </div>
     </div>
   );
