@@ -2,7 +2,8 @@
   "locales": ["ca", "es"],
   "defaultLocale": "ca",
   "pages": {
-    "*": ["home"],
+    "*": ["navbar"],
+    "/": ["home"],
     "/service": ["service"],
     "/about": ["about"],
     "/contact": ["contact"]
