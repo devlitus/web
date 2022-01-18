@@ -7,6 +7,10 @@
   align-items: center;
   font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
+.navbar__logo {
+  font-family: var(--font-family-variant);
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
 .navbar__menu {
   display: flex;
   align-items: center;
