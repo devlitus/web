@@ -1,28 +1,32 @@
+import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import ChangeLanguage from "./ChangeLanguage";
 import style from "../styles/Navbar.module.css";
 
 export default function Navbar() {
+  const { t } = useTranslation("navbar");
+  const title = t("titleHeader");
+
   return (
     <div className={style.navbar}>
-      <div className="navbar__logo">
-        <p>Pedagogia en moviment</p>
+      <div className={style.navbar__logo}>
+        <p>{title}</p>
       </div>
       <div className={style.navbar__menu}>
         <ul className={style.navbar__menu__items}>
           <li className={style.navbar__menu__item}>
             <Link href="/">
-              <a>Inici</a>
+              <a>{t("home")}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/service">
-              <a>Servei</a>
+              <a>{t("service")}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/about">
-              <a>Sobre Mi</a>
+              <a>{t("about")}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
@@ -37,7 +41,7 @@ export default function Navbar() {
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/contact">
-              <a>Contacte</a>
+              <a>{t("contact")}</a>
             </Link>
           </li>
         </ul>
