@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --font-family: "Montserrat", sans-serif;
-  --font-family-variant: "Liu Jian Mao Cao", cursive;
-  --primary-color: #005f94;
+  --fontSize: 16px;
+  --fontFamily: "Montserrat";
+  --fontFamilyVariant: "Liu Jian Mao Cao", cursive;
+  --fontWeight: 400;
+  --fontWeightBold: 700;
+  --fontWeightUltraBold: 800;
+  --fontWeightLight: 300;
+  --fontWeightMedium: 500;
+  --fontWeightSemiBold: 600;
+  --fontWeightThin: 100;
+  --fontWeightUltraLight: 200;
+  --primatyColor: #005f94;
+  --secondaryColor: #89acc0;
+  --smScreen: 640px;
+  --lgScreen: 1024px;
+  --xlScreen: 1440px;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -27,7 +40,7 @@ html {
  */
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--fontFamily);
   margin: 0;
 }
 

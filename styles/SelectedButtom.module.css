@@ -1,0 +1,13 @@
+.buttom {
+ margin: 0 1rem; 
+ background-color: transparent;
+ color: #fff;
+  padding: 0.2rem 2rem;
+  /* border-radius: 0.5rem; */
+  border: var(--secondaryColor) 1px solid;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.buttom:hover {
+  background-color: var(--secondaryColor);
+}
