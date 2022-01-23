@@ -26,3 +26,10 @@
   font-size: clamp(1rem, 4.5vw, 2rem);
   font-weight: var(--fontWeightUltraLight);
 }
+.content__card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 1rem;
+}
