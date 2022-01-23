@@ -2116,12 +2116,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next-translate@^1.2.0":
-  "integrity" "sha512-L15JCfvj6BhQfx7i3nsJReUF7wrHe1RlzK7h25QlBT40prGQLZ5nJ6gx9Vd3Ew0V9QMqaVELUeQQ1u51yyDu0Q=="
-  "resolved" "https://registry.npmjs.org/next-translate/-/next-translate-1.2.0.tgz"
-  "version" "1.2.0"
-
-"next@>= 10.0.0", "next@>=10.2.0", "next@12.0.7":
+"next@>=10.2.0", "next@12.0.7":
   "integrity" "sha512-sKO8GJJYfuk9c+q+zHSNumvff+wP7ufmOlwT6BuzwiYfFJ61VTTkfTcDLSJ+95ErQJiC54uS4Yg5JEE8H6jXRA=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.0.7.tgz"
   "version" "12.0.7"
@@ -2559,7 +2554,7 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.x", "react@17.0.2":
+"react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

@@ -1,13 +1,13 @@
-import useTranslation from "next-translate/useTranslation";
 import Navbar from "../../components/Navbar";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Service() {
-  const { t } = useTranslation("service");
-  const title = t("title");
+  const i18n = useTranslation();
+  const { service } = i18n;
   return (
     <>
       <Navbar />
-      <h1>{title}</h1>
+      <h1>{service.pathUrl}</h1>
     </>
   );
 }

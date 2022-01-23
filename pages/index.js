@@ -1,4 +1,4 @@
-import useTranslation from "next-translate/useTranslation";
+import { useTranslation } from "../hooks/useTranslation";
 import Header from "../components/Header";
 import LayoutHome from "../components/LayoutHome";
 import Navbar from "../components/Navbar";
@@ -10,14 +10,8 @@ import bissnes from "../public/images/resources/44.jpg";
 import Card from "../components/Card";
 
 export default function Home() {
-  const { t } = useTranslation("home");
-  const titleHeader = t("titleHeader");
-  const primarySectionText = t("primarySectionText");
-  const secondarySectionText = t("secondarySectionText");
-  const terciarySectionText = t("terciarySectionText");
-  const cardTitle1 = t("cardTitle1");
-  const cardTitle2 = t("cardTitle2");
-  const cardTitle3 = t("cardTitle3");
+  const i18n = useTranslation();
+  const { home } = i18n;
   return (
     <LayoutHome>
       <nav className={styles.navbar}>
@@ -28,17 +22,17 @@ export default function Home() {
       </header>
       <section className={styles.section}>
         <Section />
-        <h1 className={styles.text}>{titleHeader}</h1>
+        <h1 className={styles.text}>{home.TITLE_HEADER}</h1>
       </section>
       <div className={styles.content}>
         <div className={styles.parf}>
-          <p>{primarySectionText}</p>
-          <p>{secondarySectionText}</p>
-          <p>{terciarySectionText}</p>
+          <p>{}</p>
+          <p>{}</p>
+          <p>{}</p>
           <div className={styles.content__card}>
-            <Card image={xerrada} title={cardTitle1} />
-            <Card image={cours} title={cardTitle2} />
-            <Card image={bissnes} title={cardTitle3} />
+            <Card image={xerrada} title={""} />
+            <Card image={cours} title={""} />
+            <Card image={bissnes} title={""} />
           </div>
         </div>
       </div>
