@@ -1,18 +1,21 @@
-import setLanguage from "next-translate/setLanguage";
-import useTranslation from "next-translate/useTranslation";
-import i18nConfig from "../i18n.json";
+import { useRouter } from "next/router";
 import style from "../styles/SelectedButtom.module.css";
-const { locales } = i18nConfig;
 
 export default function ChangeLanguage() {
-  const { lang } = useTranslation();
+  const { locales, locale } = useRouter();
+  console.log(locales);
+
+  const handlerLanguages = (lang) => {
+    console.log(lang);
+  };
   return locales.map((lng) => {
-    if (lng === lang) return null;
+    if (lng === locale) return null;
+    console.log(lng);
     return (
       <div
         className={style.buttom}
         key={lng}
-        onClick={async () => await setLanguage(lng)}
+        onClick={() => handlerLanguages(lng)}
       >
         {lng}
       </div>

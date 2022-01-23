@@ -1,18 +1,18 @@
 import { useState } from "react";
 import Link from "next/link";
-import useTranslation from "next-translate/useTranslation";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import style from "../styles/Navbar.module.css";
 import ChangeLanguage from "./ChangeLanguage";
 import Sidebar from "./Sidebar";
-// import Sidebar from "./Sidebar";
+import { useTranslation } from "../hooks/useTranslation";
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isVisibility, setIsVisibility] = useState(false);
-  const { t } = useTranslation("navbar");
-  const title = t("titleHeader");
+  const i18n = useTranslation();
+  const { navbar } = i18n;
   const handlerClickOpen = () => {
     setIsVisibility(true);
     setIsSidebarOpen(!isSidebarOpen);
@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className={style.navbar}>
-      <p className={style.navbar__logo}>{title}</p>
+      <p className={style.navbar__logo}>{}</p>
       <FontAwesomeIcon
         icon={faBars}
         size="2x"
@@ -40,17 +40,17 @@ export default function Navbar() {
         <ul className={style.navbar__menu__items}>
           <li className={style.navbar__menu__item}>
             <Link href="/">
-              <a>{t("home")}</a>
+              <a>{navbar.HOME_URL}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/service">
-              <a>{t("service")}</a>
+              <a>{navbar.SERVICE_URL}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/about">
-              <a>{t("about")}</a>
+              <a>{navbar.ABOUT_URL}</a>
             </Link>
           </li>
           <li className={style.navbar__menu__item}>
@@ -65,7 +65,7 @@ export default function Navbar() {
           </li>
           <li className={style.navbar__menu__item}>
             <Link href="/contact">
-              <a>{t("contact")}</a>
+              <a>{navbar.CONTACT_URL}</a>
             </Link>
           </li>
         </ul>

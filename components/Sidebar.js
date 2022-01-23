@@ -1,9 +1,9 @@
 import Link from "next/link";
-import useTranslation from "next-translate/useTranslation";
+// import useTranslation from "next-translate/useTranslation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
-import ChangeLanguage from "./ChangeLanguage";
+// import ChangeLanguage from "./ChangeLanguage";
 import styles from "../styles/Sidebar.module.css";
 
 export default function Sidebar({ isSidebarOpen, handlerClickOpen }) {
@@ -16,7 +16,6 @@ export default function Sidebar({ isSidebarOpen, handlerClickOpen }) {
       }`}
     >
       <div className={styles.sidebar__close}>
-        <ChangeLanguage />
         <FontAwesomeIcon
           icon={faTimes}
           size="3x"
