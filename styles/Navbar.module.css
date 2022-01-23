@@ -1,14 +1,13 @@
 .navbar {
-  max-height: 3rem;
   background-color: var(--primatyColor);
   color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .navbar__logo {
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 0.7rem;
   font-family: var(--fontFamilyVariant);
   /* font-size: clamp(1rem, 2.5vw, 2rem); */
   font-size: 1.5rem;
@@ -29,4 +28,22 @@
   text-decoration: none;
   border-right: #fff 1px solid;
   padding-right: 1rem;
+}
+.navbar__buttom_mobile {
+  display: none;
+}
+@media screen and (max-width: 678px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar__logo {
+    margin: 0 0 0 0.5rem;
+  }
+  .navbar__buttom_mobile {
+    display: block;
+    margin: 0.3rem 0.5rem;
+  }
+  .navbar__menu {
+    display: none;
+  }
 }
