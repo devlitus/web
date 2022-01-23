@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navigator navigator navigator"
+    "header header header"
+    "section section section"
+    "content content content";
+}

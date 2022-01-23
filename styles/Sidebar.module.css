@@ -1,0 +1,21 @@
+.sidebar__close {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+.sidebar__menu__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  list-style: none;
+}
+.sidebar__menu__item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: var(--fontWeightUltraBold);
+}

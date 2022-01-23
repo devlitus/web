@@ -30,6 +30,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: var(--fontSize);
 }
 
 /* Sections
@@ -41,6 +42,7 @@ html {
 
 body {
   font-family: var(--fontFamily);
+  font-size: var(--fontSize);
   margin: 0;
 }
 
@@ -368,4 +370,8 @@ template {
 
 [hidden] {
   display: none;
+}
+span {
+  margin: 0;
+  padding: 0;
 }
