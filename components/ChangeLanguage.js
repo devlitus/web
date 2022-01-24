@@ -6,6 +6,7 @@ export default function ChangeLanguage() {
   console.log(locales);
 
   const handlerLanguages = (lang) => {
+    locale = lang;
     console.log(lang);
   };
   return locales.map((lng) => {

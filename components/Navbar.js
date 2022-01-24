@@ -7,10 +7,12 @@ import style from "../styles/Navbar.module.css";
 import ChangeLanguage from "./ChangeLanguage";
 import Sidebar from "./Sidebar";
 import { useTranslation } from "../hooks/useTranslation";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isVisibility, setIsVisibility] = useState(false);
+  const { locale } = useRouter();
   const i18n = useTranslation();
   const { navbar } = i18n;
   const handlerClickOpen = () => {
@@ -39,7 +41,7 @@ export default function Navbar() {
         </div>
         <ul className={style.navbar__menu__items}>
           <li className={style.navbar__menu__item}>
-            <Link href="/">
+            <Link href="/" locale={locale}>
               <a>{navbar.HOME_URL}</a>
             </Link>
           </li>
