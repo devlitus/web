@@ -22,10 +22,10 @@ const es = {
     pathUrl: "Contacto",
   },
   navbar: {
-    HOME_URL: "IniciO",
+    HOME_URL: "Inicio",
     ABOUT_URL: "Quien soy",
     SERVICE_URL: "Servicios",
-    CONTACT_URL: "COntacto",
+    CONTACT_URL: "Contacto",
   },
 };
 
